@@ -1,0 +1,145 @@
+/*Importação de fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*Estilização*/
+#Header {
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0.5%;
+}
+
+#Header h1 {
+    font-size: x-large;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+#Header h2 {
+    font-size: large;
+    font-weight: 250;
+}
+
+body {
+    background-image: url("data:image/jpeg;base64,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");
+}
+
+body h2 {
+    font-family: Ubuntu;
+    margin: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Product {
+    background-color: white;
+    display: block;
+    width: auto;
+    height: fit-content;
+    padding: 5px 10px 5px 10px;
+    margin: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 211, 211);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+
+.Product img {
+    width: 120px;
+    border-radius: 5px;
+    float: right;
+}
+
+#Cart {
+    background-color: red;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0.1% 2% 0.1% 3%;
+    height: fit-content;
+    overflow: auto;
+}
+
+.price {
+    display: none;
+}
+
+#ItemsArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 3% 0% 3%;
+}
+
+#Total {
+    text-align: right;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+hr {
+    border: 2px dotted white;
+}
+
+.quantity {
+    display: none;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    border: 2px solid lightgray;
+    padding: 2px;
+}
+
+button {
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: 0px 0px black 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+    float:right;
+    color: red;
+    background-color: white;
+    padding: 5px;
+    display: none;
+}
+
+#FinalOrder {
+    margin: 5% auto 5% auto;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 3% 5% 3% 5%;
+}
+
+#FinalOrder h2 {
+    text-align: center;
+}
+
+#FinalOrder input {
+    padding-top: -2%;
+    width: 100%;
+}
+
+#FinalOrder div {
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    border: 2px solid ;
+    color: white;
+    background-color: red;
+    padding: 3%;
+}

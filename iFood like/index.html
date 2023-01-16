@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiFome!</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+
+<body>
+    <div id="Header">
+        <h1>kiFome!</h1>
+        <h2>Tá com fome? Pede que passa!</h2>
+    </div>    
+
+    <h2>Massas deliciosas!</h2>
+
+    <div class="Product" id="Product1" onclick="addCart(this);">
+        
+        <h3>Tortinha mista</h3>
+        <img src="https://img.itdg.com.br/tdg/images/recipes/000/118/746/351692/351692_original.jpg" alt="Foto da Tortinha">
+        <h4>Uma deliciosa tortinha com milho, ervilha, azeitona, queijo mussarela e presunto!</h4>
+        <p>Atenção: Não é possível modificar ingredientes.</p>
+        <p> <strong>R$ 5,00 / Fatia (200g)</strong> </p>
+        <p class="price" type="number">5.00</p>
+
+    </div>
+
+    <div class="Product" id="Product2" onclick="addCart(this);">
+        
+        <h3>Lasanha Quatro Queijos</h3>
+        <img src="https://p7m4z9n9.stackpathcdn.com/wp-content/uploads/2020/06/lasanhamolho4queijos3.jpg" alt="Foto da Lasanha">
+        <h4>Que tal uma lasanha quatro queijos deliciosa? Leva Provolone, Gorgonzola, Mussarela e Catupiry!</h4>
+        <p>Atenção: Não é possível modificar ingredientes.</p>
+        <p> <strong>R$ 7,00 / Fatia (200g)</strong> </p>
+        <p class="price" type="number">7.00</p>
+        
+    </div>
+
+    <h2>E que tal uma bebida pra acompanhar?</h2>
+
+    <div class="Product" id="Product3" onclick="addCart(this);">
+        <h3>Refrigerante</h3>
+        
+        <p>Todos são latinhas de 300 ml</p>
+        <p> <strong>R$ 4,99</strong> </p>
+        <p class="price" type="number">4.99</p>
+    </div>
+
+    <h2>Uma sobremesa pra fechar com chave de ouro!</h2>
+
+    <div class="Product" id="Product4" onclick="addCart(this);">
+        
+        <h3>Pudim</h3>
+        <img src="https://s2.glbimg.com/1FLHGlHMYjcoylHCvcc93k9JsSU=/0x0:1800x1400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/t/2/dpV1FkS4WByGHfml8S1w/pudim.jpg" alt="Foto do Pudim">
+        <h4>Um pudim espetacular com Leite Moça original! Fora de série!</h4>
+        <p>Atenção: Não é possível modificar ingredientes.</p>
+        <p> <strong>R$ 3,00 / Fatia (50g)</strong> </p>
+        <p class="price" type="number">3.00</p>
+        
+    </div>
+
+    <div id="Cart">
+        <h2>Carrinho</h2>
+        <div id="ItemsArea">
+            <div id="Items">
+                <p class="CartItem">Seu carrinho está vazio.</p>
+            </div>
+
+            <div id="Prices">
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="Total">
+            <p>R$ 0,00</p>
+        </div>
+
+        <a href="#FinalOrder">
+            <button id="finishOrder" onclick="list()"><strong>Finalizar Pedido</strong></button>
+        </a>   
+    </div>
+
+    <div id="FinalOrder">
+        <h2>Let's go!</h2>
+        <p>Nome: </p><input type="text" id="clientName">
+        <p>Endereço: </p> <input type="text" id="clientAdress">
+        <p>Items: </p>
+        <p id="list"></p>
+        <div onclick="sendOrder()">Enviar</div>
+    </div>
+
+</body>
+</html>
